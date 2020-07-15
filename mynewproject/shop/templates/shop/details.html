@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <H3> Details -</H3><br>
+    <br>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="/media/{{ data.product_image }}" width="350" height="400">
+                    </div>
+                    
+                </div>
+            </div>
+            
+
+<table class="table table-striped col-md-6">
+    <thead>
+        <tr>
+            <th scope="col">Product Name </th>
+            <th scope="col"> {{data.product_name}} </th>
+        </tr>
+        <tr>
+            <th scope="col">Product Price </th>
+            <th scope="col"> {{data.product_price}} </th>
+        </tr>
+        <tr>
+            <th scope="col">Product Discount Price </th>
+            <th scope="col"> {{data.discount_price}} </th>
+        </tr>
+        <tr>
+            <th scope="col">Product Category </th>
+            <th scope="col"> {{data.product_category}} </th>
+        </tr>
+        <tr>
+            <th scope="col">Product Description </th>
+            <th scope="col"> {{data.description}} </th>
+        </tr>
+        <tr>
+            <th scope="col"> Quantity </th>
+            <th scope="col"> {{data.product_quantity}} </th>
+        </tr>
+    </thead>
+</table>
+</body>
+</html>
